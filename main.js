@@ -1,4 +1,4 @@
-var cookies = 0;
+var oyster = 0;
 
 function oysterClick(1){
     oysters = oysters + 1;
