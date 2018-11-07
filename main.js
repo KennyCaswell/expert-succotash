@@ -1,27 +1,27 @@
 var cookies = 0;
 
-function cookieClick(number){
-    cookies = cookies + number;
-    document.getElementById("cookies").innerHTML = cookies;
+function oysterClick(1){
+    oysters = oysters + 1;
+    document.getElementById("oysters").innerHTML = oysters;
 };
 
-var cursors = 0;
+var collectors = 0;
 
-function buyCursor(){
-    var cursorCost = Math.floor(10 * Math.pow(1.1,cursors));     //works out the cost of this cursor
-    if(cookies >= cursorCost){                                   //checks that the player can afford the cursor
-        cursors = cursors + 1;                                   //increases number of cursors
-    	cookies = cookies - cursorCost;                          //removes the cookies spent
-        document.getElementById('cursors').innerHTML = cursors;  //updates the number of cursors for the user
-        document.getElementById('cookies').innerHTML = cookies;  //updates the number of cookies for the user
+function buyCollector(){
+    var collectorCost = Math.floor(10 * Math.pow(1.1,collectors));     //works out the cost of this collector
+    if(oyster >= collectorCost){                                   //checks that the player can afford the collector
+        collectors = collectors + 1;                                   //increases number of collectors
+    	oysters = oysters - collectorcost;                          //removes the oysters spent
+        document.getElementById('collectors').innerHTML = collectors;  //updates the number of collectors for the user
+        document.getElementById('oysters').innerHTML = oysters;  //updates the number of oysters for the user
     };
-    var nextCost = Math.floor(10 * Math.pow(1.1,cursors));       //works out the cost of the next cursor
-    document.getElementById('cursorCost').innerHTML = nextCost;  //updates the cursor cost for the user
+    var nextCost = Math.floor(10 * Math.pow(1.1,oysters));       //works out the cost of the next collector
+    document.getElementById('collectorCost').innerHTML = nextCost;  //updates the collector cost for the user
 };
 
 window.setInterval(function(){
 	
-	cookieClick(cursors);
+	oysterClick(collectors);
 	
 }, 1000)
 
