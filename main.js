@@ -1,11 +1,11 @@
-var oyster = 0;
+var oysters = 0;
 
 function oysterclick(1){
     oysters = oysters + number;
     document.getElementById("oysters").innerHTML = oysters;
 };
 
-var collectors = 0;
+var collector = 0;
 
 function buycollector(1){
     var collectorcost = Math.floor(10 * Math.pow(1.1,collectors));     //works out the cost of this collector
