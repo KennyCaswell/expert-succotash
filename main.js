@@ -1,7 +1,7 @@
 var oyster = 0;
 
 function oysterClick(1){
-    oysters = oysters + 1;
+    oysters = oysters + number;
     document.getElementById("oysters").innerHTML = oysters;
 };
 
